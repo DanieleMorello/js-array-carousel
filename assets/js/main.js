@@ -45,3 +45,20 @@ const imgTag = document.createElement("img");
 imgTag.setAttribute("src", `./assets/img/${images[0]}`);
 imgTag.setAttribute("alt", "");
 colDiv.appendChild(imgTag);
+
+// Creiamo un elemento div per i bottoni "prev" e "next"
+const buttonsDiv = document.createElement("div");
+buttonsDiv.classList.add("buttons");
+containerDiv.insertBefore(buttonsDiv, rowDiv);
+
+// Creiamo il bottone "prev"
+const prevButton = document.createElement("button");
+prevButton.classList.add("prev");
+prevButton.innerHTML = "&and;";
+buttonsDiv.appendChild(prevButton);
+
+// Creiamo il bottone "next"
+const nextButton = document.createElement("button");
+nextButton.classList.add("next");
+nextButton.innerHTML = "&or;";
+buttonsDiv.appendChild(nextButton);
