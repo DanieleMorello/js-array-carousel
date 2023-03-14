@@ -62,3 +62,15 @@ const nextButton = document.createElement("button");
 nextButton.classList.add("next");
 nextButton.innerHTML = "&or;";
 buttonsDiv.appendChild(nextButton);
+
+// Aggiungiamo un gestore di eventi per il click del bottone "prev"
+prevButton.addEventListener("click", function() {
+  // Troviamo l'indice corrente dell'immagine visualizzata
+  const currentIndex = images.indexOf(imgTag.getAttribute("src").split("/").pop());
+  
+  // Calcoliamo l'indice dell'immagine precedente
+  const prevIndex = currentIndex === 0 ? images.length - 1 : currentIndex - 1;
+  
+  // Aggiorniamo l'attributo "src" dell'elemento "img"
+  imgTag.setAttribute("src", `./assets/img/${images[prevIndex]}`);
+});
