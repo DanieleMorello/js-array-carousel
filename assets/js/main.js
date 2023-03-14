@@ -74,3 +74,15 @@ prevButton.addEventListener("click", function() {
   // Aggiorniamo l'attributo "src" dell'elemento "img"
   imgTag.setAttribute("src", `./assets/img/${images[prevIndex]}`);
 });
+
+// Aggiungiamo un gestore di eventi per il click del bottone "next"
+nextButton.addEventListener("click", function() {
+  // Troviamo l'indice corrente dell'immagine visualizzata
+  const currentIndex = images.indexOf(imgTag.getAttribute("src").split("/").pop());
+  
+  // Calcoliamo l'indice dell'immagine successiva
+  const nextIndex = currentIndex === images.length - 1 ? 0 : currentIndex + 1;
+  
+  // Aggiorniamo l'attributo "src" dell'elemento "img"
+  imgTag.setAttribute("src", `./assets/img/${images[nextIndex]}`);
+});
