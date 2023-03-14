@@ -7,7 +7,7 @@
 /* Utilities */
 .container {
   width: 80%;
-  margin: 2rem auto;
+  margin: 7rem auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,13 +24,13 @@ img {
 
 .prev {
   position: absolute;
-  top: 2.5rem;
+  top: 7.5rem;
   left: 53rem;
 }
 
 .next {
   position: absolute;
-  bottom: 13.5rem;
+  bottom: 8.5rem;
   left: 53rem;
 }
 
