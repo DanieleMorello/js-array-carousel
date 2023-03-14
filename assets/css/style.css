@@ -10,9 +10,10 @@
   margin: 2rem auto;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 img {
   max-width: 100%;
-  width: 45rem;
+  height: 45rem;
 }
