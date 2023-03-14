@@ -17,3 +17,26 @@ img {
   max-width: 100%;
   height: 45rem;
 }
+
+.button {
+  position: relative;
+}
+
+.prev {
+  position: absolute;
+  top: 2.5rem;
+  left: 53rem;
+}
+
+.next {
+  position: absolute;
+  bottom: 13.5rem;
+  left: 53rem;
+}
+
+.prev, .next {
+  width: 1rem;
+  aspect-ratio: 1/1;
+  border: none;
+  border-radius: 50%;
+}
